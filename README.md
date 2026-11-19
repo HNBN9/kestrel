@@ -8,12 +8,14 @@ It is designed with portability and usability in mind.
 
 ![Kestrel](./images/header.jpg)
 
-> [!WARNING]
-> **Right Half Charging Issue**
+> [!CAUTION]
+> **Right Half Hardware Issue**
 >
-> There are reports that the right half does not charge properly because of the MOSFET placed in its charging circuit for reverse-current blocking.
+> A critical design flaw has been identified in the charging and power management circuit of the right half. The current hardware revision does not properly support LiPo battery charging and may cause the battery to become deeply discharged, potentially resulting in permanent battery damage.
 >
-> Removing this MOSFET and shorting its pads is the recommended workaround. Note that this also removes the reverse-current protection.
+> This issue cannot be reliably resolved through simple hardware modifications. Therefore, development of **Kestrel V2** is underway, featuring a redesigned power management circuit while maintaining firmware compatibility with the current version.
+>
+> A revised hardware design will be released once validated. Until then, use of the right half with a LiPo battery is not recommended.
 
 ## Features
 
