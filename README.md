@@ -8,6 +8,13 @@ It is designed with portability and usability in mind.
 
 ![Kestrel](./images/main.jpg)
 
+> [!WARNING]
+> **Right Half Charging Issue**
+>
+> There are reports that the right half does not charge properly because of the MOSFET placed in its charging circuit for reverse-current blocking.
+>
+> Removing this MOSFET and shorting its pads is the recommended workaround. Note that this also removes the reverse-current protection.
+
 ## Features
 
 - Wireless Bluetooth split keyboard running ZMK
@@ -77,6 +84,10 @@ The keyboard-specific configuration is maintained in a separate repository:
 **[Kestrel ZMK Configuration](https://github.com/HNBN9/zmk-config-kestrel)**
 
 The firmware files show how different matrices are applied to each half in ZMK. The matrix transform is shared between both halves, while the `kscan` configuration is written separately for the left and right halves.
+
+## Known Issues
+
+- The reverse-current blocking MOSFET in the right half's charging circuit has been reported to prevent proper charging. Remove the MOSFET and short its pads as a workaround (this removes the reverse-current protection).
 
 ## Repository Status
 
