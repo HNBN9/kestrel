@@ -64,9 +64,9 @@ For this to work reliably, the supply voltage must stay constant. The right half
 
 ### Credits
 
-- The charlieplex matrix is based on Hooky's round-robin.
+- The charlieplex matrix is based on [Hooky's round-robin schematics](https://github.com/HookyKB/round-robin-schematics).
 - The 3V3 circuit is based on [DYA Dash](https://github.com/cormoran/dya-dash-keyboard).
-- The PMW3610 breakout board is a modified version of ufan's board.
+- The PMW3610 breakout board is a modified version of [ufan's pmw3610_breakout](https://github.com/ufan/pmw3610_breakout).
 
 ## Firmware
 
@@ -81,3 +81,16 @@ The firmware files show how different matrices are applied to each half in ZMK. 
 ## Repository Status
 
 This repository currently contains the case STEP files and PCB-related files.
+
+## License
+
+This project uses separate licenses for software and non-software materials.
+
+| Material | License |
+|---|---|
+| Firmware configuration and source code | [MIT License](./LICENSE-MIT) |
+| Hardware design files (PCB, case), documentation, photographs, and renders | [CC BY-NC 4.0](./LICENSE-CC-BY-NC) |
+
+Parts derived from other projects (see [Credits](#credits)) remain subject to the terms of their original authors.
+
+ZMK Firmware itself is distributed under its own license; see the [ZMK repository](https://github.com/zmkfirmware/zmk).
