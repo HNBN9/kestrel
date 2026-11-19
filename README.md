@@ -6,7 +6,7 @@ The right half has a 19 mm trackball using the PMW3610 sensor, and the left half
 
 It is designed with portability and usability in mind.
 
-![Kestrel](./images/main.jpg)
+![Kestrel](./images/header.jpg)
 
 > [!WARNING]
 > **Right Half Charging Issue**
@@ -23,10 +23,6 @@ It is designed with portability and usability in mind.
 - 5-way switch on the left half
 - 3D-printed integrated hinge that bends close to 90° and provides built-in tenting
 - Charlieplex matrix on the right half, with a dedicated 3V3 DC/DC converter circuit
-
-## Layout
-
-![Kestrel Keymap](./images/keymap.jpg)
 
 ## Specifications
 
@@ -48,13 +44,15 @@ The most distinctive feature of Kestrel is its 3D-printed hinge.
 
 The built-in hinge bends close to 90° and supports tenting on its own. It keeps a suitable amount of torque for use on a keyboard.
 
-![Hinge](./images/hinge.jpg)
+![Hinge](./images/hinge.webp)
 
 ### Left Half: 5-Way Switch
 
 The left half uses a regular key matrix so that the 5-way switch can be included.
 
 The 5-way switch supports a center click and pushing in four directions. However, it is prone to accidental inputs and its lifespan is not expected to be long. For this reason it is used for conservative functions such as arrow keys and switching between QWERTY and Colemak layers.
+
+![Left Half Schematic](./images/schematic_left.png)
 
 ### Right Half: Trackball and Charlieplex Matrix
 
@@ -67,7 +65,11 @@ For this to work reliably, the supply voltage must stay constant. The right half
 > [!NOTE]
 > The BOM for this design uses a WSON package for the 3V3 converter. If you do not order a PCBA, you will need to hand-solder the WSON package yourself. Modifying the circuit to use a similar-performance package that is easier to hand-solder is recommended.
 
-![PCB](./images/pcb.png)
+![Right Half Schematic](./images/schematic_right.png)
+
+### PCB
+
+![PCB Wiring](./images/pcb.png)
 
 ### Credits
 
@@ -84,6 +86,10 @@ The keyboard-specific configuration is maintained in a separate repository:
 **[Kestrel ZMK Configuration](https://github.com/HNBN9/zmk-config-kestrel)**
 
 The firmware files show how different matrices are applied to each half in ZMK. The matrix transform is shared between both halves, while the `kscan` configuration is written separately for the left and right halves.
+
+## Gallery
+
+![Left and Right Halves](./images/set.jpg)
 
 ## Known Issues
 
