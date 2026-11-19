@@ -8,14 +8,15 @@ It is designed with portability and usability in mind.
 
 ![Kestrel](./images/header.jpg)
 
-> [!CAUTION]
-> **Right Half Hardware Issue**
+> > **Warning — Right Half Power Management**
 >
-> A critical design flaw has been identified in the charging and power management circuit of the right half. The current hardware revision does not properly support LiPo battery charging and may cause the battery to become deeply discharged, potentially resulting in permanent battery damage.
+> The current revision has a critical flaw in the right-side power management circuit. The LiPo charging and power delivery circuitry may not function correctly, potentially resulting in battery over-discharge and permanent damage.
 >
-> This issue cannot be reliably resolved through simple hardware modifications. Therefore, development of **Kestrel V2** is underway, featuring a redesigned power management circuit while maintaining firmware compatibility with the current version.
+> **If you still wish to use this revision**, remove all components belonging to the right-side boost converter circuit before connecting the LiPo battery directly to the XIAO's BAT+ and GND pads. Ensure that the battery charging and protection circuitry remains properly connected and functional.
 >
-> A revised hardware design will be released once validated. Until then, use of the right half with a LiPo battery is not recommended.
+> This workaround is provided as-is and has not been validated as a reliable fix. Use at your own risk.
+>
+> A redesigned power management circuit is planned for V2.
 
 ## Features
 
